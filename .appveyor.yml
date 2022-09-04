@@ -1,4 +1,4 @@
-image: Ubuntu1804  # образ для сборки
+image: Visual Studio 2019  # образ для сборки
 
 stack: node 12  # окружение
 
@@ -9,7 +9,7 @@ branches:
 cache: node_modules  # кеширование
 
 install:
-  - npm install --save-dev # команда установки зависимостей
+  - npm install # команда установки зависимостей
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
