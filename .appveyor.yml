@@ -6,8 +6,10 @@ branches:
   only:
     - main  # ветка git
 
+cache: node_modules  # кеширование
+
 install:
-  - npm install  # команда установки зависимостей
+  - npm install --save-dev # команда установки зависимостей
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
